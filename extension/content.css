@@ -1,0 +1,5 @@
+/* 換上的第 2 幀是 4:3（480×360），用 cover 裁成頁面的 16:9 比例，避免變形。 */
+img[data-ytsm-applied="1"] {
+  object-fit: cover !important;
+  object-position: center !important;
+}

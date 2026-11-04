@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <title>YouTube 中段縮圖</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="head">
+      <img class="logo" src="icons/icon48.png" alt="" width="30" height="30" />
+      <div class="titles">
+        <h1>YouTube 中段縮圖</h1>
+        <p class="sub">用影片中段的畫面當縮圖 · <span id="ver">v1.2.0</span></p>
+      </div>
+      <label class="switch" title="啟用 / 停用">
+        <input type="checkbox" id="enabled" />
+        <span class="slider"></span>
+      </label>
+    </header>
+
+    <main class="rows" id="rows">
+      <label class="row">
+        <span class="label">畫質</span>
+        <select id="quality">
+          <option value="auto">自動 · 跟原圖同尺寸</option>
+          <option value="hq">標準 · 480×360</option>
+          <option value="sd">清晰 · 640×480</option>
+          <option value="maxres">最高 · 1280×720</option>
+          <option value="mq">輕量 · 320×180</option>
+        </select>
+      </label>
+      <label class="row">
+        <span class="label">取幀</span>
+        <select id="frame">
+          <option value="1">前段（第 1 幀）</option>
+          <option value="2">中段（第 2 幀）</option>
+          <option value="3">後段（第 3 幀）</option>
+        </select>
+      </label>
+    </main>
+
+    <p class="status" id="status">檢查目前分頁…</p>
+    <p class="tip">設定即時生效；已開啟的 YouTube 分頁會自動重畫縮圖。</p>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

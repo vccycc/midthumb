@@ -1,0 +1,11 @@
+{
+  "name": "midthumb",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Swaps YouTube thumbnails for the middle frame of the video.",
+  "scripts": {
+    "test": "node --test test/",
+    "check": "node tools/check.mjs"
+  },
+  "license": "MIT"
+}
